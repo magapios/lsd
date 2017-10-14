@@ -193,7 +193,31 @@ let filter p =
 
 ## Temă
 
-### *Run-length encoding*
+### Funcția `take`
+
+Scrieți o funcție `take` care primește un număr `n` și o listă și produce lista primelor `n` elemente ale listei.
+
+**Exemplu**
+
+`take 3 [10; 20; 30; 40; 50; 60; 70; 80; 90]` produce `[10; 20; 30]`
+
+### Funcția `skip`
+
+Scrieți o funcție `skip` care primește un număr `n` și o listă și produce lista fără primele `n` elemente ale listei.
+
+**Exemplu**
+
+`skip 3 [10; 20; 30; 40; 50; 60; 70; 80; 90]` produce `[40; 50; 60; 70; 80; 90]`
+
+### Funcția `range`
+
+Scrieți o funcție `range` care primește două numere `x` și `y` și produce lista numerelor naturale din intervalul `[x, y]`.
+
+**Exemplu**
+
+`range 4 9` produce `[4; 5; 6; 7; 8; 9]`
+
+### *Run-length encoding* (opțional)
 
 #### Funcția `to_n`
 Scrieți o funcție `to_n` care primește un număr natural nenul `n` și produce lista care conține, în ordine, numerele naturale de la `1` la `n`, fiecare număr `i` apărând de `i` ori.
@@ -202,7 +226,7 @@ Scrieți o funcție `to_n` care primește un număr natural nenul `n` și produc
 
 `to_n 4` produce `[1; 2; 2; 3; 3; 3; 4; 4; 4; 4]`
 
-#### Funcția `without_consecutive_dups` (opțional)
+#### Funcția `without_consecutive_dups`
 
 Scrieți o funcție `without_consecutive_dups` care primește o listă și produce lista în care toate secvențele de elemente consecutive egale ale listei au fost înlocuite cu un singur element.
 Folosiți funcția `to_n` pentru a genera liste cu care să testați funcția `without_consecutive_dups`.
@@ -221,19 +245,3 @@ Folosiți funcția `to_n` pentru a genera liste cu care să testați funcția `r
 `run_length_encoding [1; 1; 1; 1; 10; 10; 2; 3]` produce `[(4, 1); (2; 10); (1, 2); (1, 3)]`
 
 > [*Run-length encoding*](http://www.fileformat.info/mirror/egff/ch09_03.htm) reprezintă o metodă foarte simplă și rapidă compresie, folosită printre altele pentru compresia imaginilor de tip [TIFF](http://www.fileformat.info/format/tiff/egff.htm) și [Windows BMP](http://www.fileformat.info/format/bmp/egff.htm).
-
-### Funcția `take`
-
-Scrieți o funcție `take` care primește un număr `n` și o listă și produce lista primelor `n` elemente ale listei.
-
-**Exemplu**
-
-`take 3 [10; 20; 30; 40; 50; 60; 70; 80; 90]` produce `[ 10; 20; 30]`
-
-### Funcția `skip`
-
-Scrieți o funcție `skip` care primește un număr `n` și o listă și produce lista fără primele `n` elemente ale listei.
-
-**Exemplu**
-
-`skip 3 [10; 20; 30; 40; 50; 60; 70; 80; 90]` produce `[40; 50; 60; 70; 80; 90]`
